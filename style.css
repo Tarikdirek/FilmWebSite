@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* base css start*/
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* base css end*/
+
+.navbar {
+  background-color: #000;
+  height: 60px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(255, 70, 70);
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+}
+.menu-list-item {
+  cursor: pointer;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-text-container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+.menu-list-item.active {
+    color: rgb(255, 70, 70);
+  }
+.menu-list-item:hover {
+  color: rgb(255, 70, 70);
+}
+
+.toggle{
+    width: 40px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    right: 1px;
+}
+
+.toggle-icon{
+  color:goldenrod;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar {
+  background-color: #000;
+  color: white;
+  height: 100%;
+  width: 60px;
+}
