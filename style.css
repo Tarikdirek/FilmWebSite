@@ -89,6 +89,7 @@ body {
   position: absolute;
   cursor: pointer;
   right: 1px;
+  transition: .5s all ease; 
 }
 
 .toggle-icon {
@@ -279,3 +280,35 @@ body {
   opacity: 1;
 }
 /* movie list end*/
+/* dark mode start*/
+.container.active{
+  background-color: white;
+}
+.navbar.active{
+  background-color: white;
+  color: black;
+}
+.sidebar.active{
+  background-color: white;
+}
+
+.sidebar i.active{
+  color: black;
+}
+.toggle.active{
+  background-color: black;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
+.movie-list-title.active{
+  color: black;
+}
+
+.movie-list-filter select.active{
+  background-color: white;
+  color: black;
+}
+/* dark mode end*/
