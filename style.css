@@ -12,7 +12,7 @@ body {
   font-style: normal;
 }
 
-.container{
+.container {
   background-color: black;
   color: white;
 }
@@ -89,7 +89,7 @@ body {
   position: absolute;
   cursor: pointer;
   right: 1px;
-  transition: .5s all ease; 
+  transition: 0.5s all ease;
 }
 
 .toggle-icon {
@@ -154,7 +154,8 @@ body {
 
 .featured-buttons {
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .featured-buttons button {
@@ -181,7 +182,7 @@ body {
   padding: 20px;
 }
 
-.movie-list-wrapper{
+.movie-list-wrapper {
   overflow: hidden;
   position: relative;
 }
@@ -196,21 +197,21 @@ body {
 .movie-list-container {
   margin-left: 70px;
 }
-.movie-item{
+.movie-item {
   position: relative;
 }
 
 .movie-item:hover .movie-item-title,
-.movie-item:hover .movie-item-buttons{
+.movie-item:hover .movie-item-buttons {
   opacity: 1;
 }
 
-.movie-item:hover .movie-item-img{
+.movie-item:hover .movie-item-img {
   transform: scale(1.2);
   opacity: 0.5;
   margin: 0 30px;
 }
-.movie-list{
+.movie-list {
   list-style: none;
   padding: 0;
   height: 300px;
@@ -221,14 +222,14 @@ body {
   transition: 1s all ease-in-out;
 }
 
-.movie-item-img{
+.movie-item-img {
   width: 270px;
   height: 200px;
   object-fit: cover;
   transition: 1s all ease-in-out;
-} 
+}
 
-.movie-item-title{
+.movie-item-title {
   background-color: rgb(40, 40, 40, 0.4);
   padding: 0 10px;
   position: absolute;
@@ -240,8 +241,7 @@ body {
   transition: 0.7s all ease-in-out;
 }
 
-
-.movie-item-buttons{
+.movie-item-buttons {
   background-color: rgb(40, 40, 40, 0.4);
   padding: 10px;
   position: absolute;
@@ -253,62 +253,86 @@ body {
   opacity: 0;
   transition: 0.7s all ease-in-out;
 }
-.movie-item-buttons i{
-  cursor:pointer;
-  opacity: .5;
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: 0.5;
   font-size: 20px;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
 
-.movie-item-buttons i:hover{
+.movie-item-buttons i:hover {
   opacity: 1;
 }
 
-.arrow{
+.arrow {
   width: 100px;
   display: flex;
   position: absolute;
   font-size: 120px;
   right: 0;
   top: 100px;
-  opacity: .5;
-  transition: .5s all ease-in-out;
+  opacity: 0.5;
+  transition: 0.5s all ease-in-out;
   cursor: pointer;
 }
 
-.arrow:hover{
+.arrow:hover {
   opacity: 1;
 }
 /* movie list end*/
 /* dark mode start*/
-.container.active{
+.container.active {
   background-color: white;
 }
-.navbar.active{
+.navbar.active {
   background-color: white;
   color: black;
 }
-.sidebar.active{
+.sidebar.active {
   background-color: white;
 }
 
-.sidebar i.active{
+.sidebar i.active {
   color: black;
 }
-.toggle.active{
+.toggle.active {
   background-color: black;
 }
 
-.toggle-ball.active{
+.toggle-ball.active {
   background-color: white;
   transform: translateX(-20px);
 }
-.movie-list-title.active{
+.movie-list-title.active {
   color: black;
 }
 
-.movie-list-filter select.active{
+.movie-list-filter select.active {
   background-color: white;
   color: black;
 }
 /* dark mode end*/
+
+/* responsive start*/
+
+@media screen and (max-width: 800px) {
+  .menu-container {
+    display: none;
+  }
+  .featured-content {
+    height: 50vh;
+  }
+  .featured-title {
+    width: 200px;
+  }
+  .featured-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    padding: 0;
+  }
+}
+
+/* responsive end*/
